@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>ros_sim_template</name>
+  <version>0.1.0</version>
+  <description>The ros_sim_template package</description>
+  <maintainer email="david.torres.ocana@gmail.com">David Torres</maintainer>
+  <license>BSD</license>
+  <author email="david.torres.ocana@gmail.com">David Torres</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+</package>

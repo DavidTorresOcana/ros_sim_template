@@ -1,0 +1,4 @@
+scan_subscriber_topic_name: /scan
+scan_subscriber_queue_size: 200
+angular_ctrl_p_gain: 10
+linear_ctrl_vel: 100
