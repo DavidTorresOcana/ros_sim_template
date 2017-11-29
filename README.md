@@ -12,7 +12,7 @@ A ROS node template to embed Simulink code generated with ertw
 
 ## Usage
 ### Where to find the main files
-* Head to ros_sim_template/src. Here you will find
+* Head to /ros_sim_template/src. Here you will find
   - ROS node definition
   - Simulink model withwich generate the code
 
@@ -29,9 +29,9 @@ packNGo(buildInfo)
 cd ..
 ```
 * If you are in a diferent folder from the ROS node (where you found the Simulink model):
-  - Copy an paste the file "dbx_control.zip" into the folder ros_sim_template/src
+  - Copy an paste the file "dbx_control.zip" into the folder /ros_sim_template/src
  
-* Unzip "dbx_control.zip" into the folder "dbx_control": dbx_control.c file should be found then in ros_sim_template/src/dbx_control/dbx_control.c
+* Unzip "dbx_control.zip" into the folder "dbx_control": dbx_control.c file should be found then in /ros_sim_template/src/dbx_control/dbx_control.c
 
 ### Package build in ROS
 This step assumes you already created a workspace in which you put this package
