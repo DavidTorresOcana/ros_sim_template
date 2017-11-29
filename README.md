@@ -17,7 +17,7 @@ A ROS node template to embed Simulink code generated with ertw
   - Simulink model  wich generate the code with
 
 ### Code generation within Matlab/Simulink
-This step can be done withn in Linux environment or Widnows, where ever you have  Matlab.
+This step can be done within Linux environment or Widnows, where ever you have Matlab installed.
 
 * Open the model "dbx_control.slx"
 * Build the model with Ctrl+b. This will generate the appropiate code. See model configuration for further details
