@@ -1,6 +1,5 @@
-# ROS_node_simulink_target_template
+# ROS_node simulink target template
 A ROS node template to embed Simulink code generated with ertw
-
 
 
 ## Requirements
@@ -46,4 +45,11 @@ source devel/setup.bash
 roscore
 rosrun ros_sim_template ros_sim_template 
 ```
+
+## Now, your Simulink model
+* Repeat same steps of code generation with your model
+  - It is highly recomended you resuse the Simulink model "dbx_control.slx", so Simulink configuration is already made for you
+  - Deploy your generated code into a folder with same name as your Simulink model
+* In file /ros_sim_template/src/ros_sim_template_node.cpp replace every match of "dbx_control" with the name of your model
+* (OPTIONAL) Change the name of the node, or even the package
 
