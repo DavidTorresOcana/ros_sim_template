@@ -14,7 +14,7 @@ A ROS node template to embed Simulink code generated with ertw
 ### Where to find the main files
 * Head to /ros_sim_template/src. Here you will find
   - ROS node definition
-  - Simulink model withwich generate the code
+  - Simulink model  wich generate the code with
 
 ### Code generation within Matlab/Simulink
 This step can be done withn in Linux environment or Widnows, where ever you have  Matlab.
