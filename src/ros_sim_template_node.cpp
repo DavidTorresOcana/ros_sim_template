@@ -1,3 +1,5 @@
+#define SIMULINK_MODEL_NAME "dbx_control"
+
 #include <ros/ros.h>
 #include "ros_sim_template/ros_sim_template.hpp"
 #include "dbx_control/dbx_control.cpp"
@@ -16,11 +18,11 @@ int main(int argc, char **argv) {
 
 	ros::Rate loopRate(20);
 
-	ros::Time begin = ros::Time::now();
+	ros::WallTime begin = ros::WallTime::now();
 	double elapsed = begin.toSec();
 	while (ros::ok()) {
-		ROS_INFO_STREAM("  Effective frequency "<<1.0/(ros::Time::now().toSec()-begin.toSec())<<" Hz");
-		begin = ros::Time::now();
+		ROS_INFO_STREAM("  Effective frequency "<<1.0/(ros::WallTime::now().toSec()-begin.toSec())<<" Hz");
+		begin = ros::WallTime::now();
 
 		// Define Simulink inputs here
 		dbx_controlModelObj.dbx_control_U.runtime = 0;
