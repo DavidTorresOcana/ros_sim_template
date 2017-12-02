@@ -55,7 +55,7 @@ rosrun ros_sim_template ros_sim_template
   - It is highly recomended you reuse the Simulink model "dbx_control.slx", so Simulink configuration is already set for you
   - Deploy your generated code into a folder with **same name** as your Simulink model
 * In file /ros_sim_template/src/ros_sim_template_node.cp:
-   - Those parts of the code with ### MODIFY HERE ###  would need to be modified
+   - Those parts of the code with ```### MODIFY HERE ###```  would need to be modified
    - In First line substitue "dbx_control" with the name of your model. E.g.:
        + ```#define SIM_MOD(x) dbx_control##x``` would look like ```#define SIM_MOD(x) your_simulink_model_name##x``` where "your_simulink_model_name" is your Simulink mode name: E.g. ```#define SIM_MOD(x) Lat_control##x``` for a Simulink model named "Lat_control"
 * (OPTIONAL) Change the name of the node, or even the package
